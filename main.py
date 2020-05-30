@@ -32,13 +32,13 @@ if __name__ == '__main__':
     states= getstatesinput()
     r=0 #range for current number of states in table
 
-    for i in data:
-        if i.split('\n')[1:]:
-            currlist = i.split('\n')[1:]
-            print(currlist)
+        for i in data:
+        currlist = i.split('\n')[1:]
+        if len(currlist)>2:            
             if currlist[1] in states:
                 print(currlist)
                 title= " Cases of Covid-19 "
                 message= f" State : { currlist[1]} \nIndian : {currlist[2]} Foreign : {currlist[3]} \nCured: {currlist[4]}\n Deaths: {currlist[5]}"
                 send_notification(title , message)
+
 
