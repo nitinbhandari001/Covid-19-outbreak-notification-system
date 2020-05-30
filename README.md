@@ -3,4 +3,4 @@ Get details about corona virus outbreak in your state through notifications with
 
 Dependencies used:
   plyer : for notifications
-  bs4   : for scraping datadirectly from site
+  bs4   : for scraping data directly from site
